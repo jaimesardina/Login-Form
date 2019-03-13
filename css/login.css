@@ -1,0 +1,94 @@
+/* ===========================
+  	General Corrections
+============================== */
+* {
+	padding: 0;
+	margin: 0;
+
+}
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+/*html,body {*/
+	/*overflow-x:hidden;*/
+/*}*/
+html,body {
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	/*background: #344054;*/
+  	background-image: linear-gradient(to bottom right, #151a23, #626f84);
+  	/*background-image:url('photos/mtback.jpg');*/
+  	/*background-size: cover;*/
+  	font-family: 'Gudea', sans-serif;
+  	width: 100%;
+}
+
+
+/* Form Layout */
+form#login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/*background-color: #afafaf;*/
+	/*opacity: 0.7;*/
+	height: auto;
+	width: 500px;
+	
+}
+
+form#login legend#welcome {
+	font-size: 24px;
+	margin-bottom: 5em;
+	letter-spacing: 0.2em;
+	color: #fff;
+	border: 1px solid white;
+	padding: 0.5em 2em;
+	border-radius: 5px;
+}
+
+input {
+	height: 30px;
+	width: 225px;
+	border: none;
+	border-bottom: 1px solid #626f84;
+	background-color: #ccc;
+	margin: 1em;
+}
+input[type=text] {
+	color: #fff;
+}
+input[type=text]:focus {
+	outline: none;
+
+
+}
+input[placeholder=Username], input[placeholder=Password] {
+	background-color: transparent;
+	padding-bottom: 0.3em;
+}
+::placeholder {
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+input[type=submit] {
+	margin-top: 2em;
+	height: 35px;
+	width: 225px;
+	border: none;
+	border-radius: 25px;
+	background-color: #849ba3;
+	font-size: 14px;
+}
+input[type=submit]:hover {
+	background-color: #9fbac4;
+	transition: 0.3s;
+	
+}
